@@ -1,0 +1,19 @@
+{
+  "name": "@sw/toolbox",
+  "version": "1.0.0",
+  "description": "Private everyday used utilities",
+  "type": "module",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node lib/*.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "zora": "^5.2.0"
+  }
+}
