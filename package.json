@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "Private everyday used utilities",
   "type": "module",
-  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
-    "test": "node lib/*.test.js"
+    "test": "npm run test:jsdom",
+    "test:jsdom": "node --experimental-vm-modules test/jsdom.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "zora": "^5.2.0"
+    "jsdom": "24.1.0",
+    "typescript": "5.5.3",
+    "zora": "6.0.0"
   }
 }
